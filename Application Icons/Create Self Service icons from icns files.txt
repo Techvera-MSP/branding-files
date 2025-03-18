@@ -1,0 +1,8 @@
+To convert an application's icon (.icns) to a .png for use with Self Service, run the following Terminal command:
+
+sips -s format png /Path/to/AppIcon.icns --out AppName.png
+
+Notes:
+- The .icns file can usually be found within the application's /Contents/Resources directory
+- If the output path is not specified, the .png file will be placed in the top-level of the user's home directory (i.e. /Users/username/AppName.png)
+- The converted image may need to be resized in order to meet Jamf Pro's requirements; the recommended dimensions are 512x512 pixels
